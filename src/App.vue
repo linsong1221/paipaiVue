@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <el-button type="primary">主要按钮</el-button>
     <img src="./assets/logo.png">
     <HelloWorld/>
   </div>
