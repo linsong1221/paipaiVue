@@ -1,19 +1,31 @@
 <template>
   <div id="app">
-    <el-button type="primary">主要按钮</el-button>
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <el-button type="primary" @click="increment">增加</el-button>
+    <el-button type="default" @click="decrement">减少</el-button>
+    <el-button type="default"  @click="clickOdd">偶数才能增加</el-button>
+    <el-button type="default"  @click="clickAsync">点击异步</el-button>
+    <div>
+      现在数字为: {{ count}}
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+//import HelloWorld from './components/HelloWorld'
+import {mapGetters, mapActions} from 'vuex'
 
 export default {
   name: 'app',
-  components: {
-    HelloWorld
-  }
+  computed:mapGetters([
+    'count'
+  ]),
+  methods:mapActions([
+    'increment',
+    'decrement',
+    'clickOdd',
+    'clickAsync'
+  ]),
+
 }
 </script>
 
