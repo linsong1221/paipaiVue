@@ -5,7 +5,7 @@ import App from './App'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import './element-ui.js'
-import store from './store.js'
+import store from './store/'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

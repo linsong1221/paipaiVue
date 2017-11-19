@@ -5,7 +5,7 @@
     <el-button type="default"  @click="clickOdd">偶数才能增加</el-button>
     <el-button type="default"  @click="clickAsync">点击异步</el-button>
     <div>
-      现在数字为: {{ count}}
+      现在数字为: {{ count}},它现在是
     </div>
   </div>
 </template>
@@ -17,7 +17,8 @@ import {mapGetters, mapActions} from 'vuex'
 export default {
   name: 'app',
   computed:mapGetters([
-    'count'
+    'count',
+    'getOdd'
   ]),
   methods:mapActions([
     'increment',
