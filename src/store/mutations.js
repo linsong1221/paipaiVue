@@ -1,4 +1,4 @@
-import {INCREMENT} from './types'
+import {INCREMENT,DECREMENT} from './types'
 import getters from './getters'
 const state = {
   count:30
@@ -6,6 +6,9 @@ const state = {
 const mutations = {
   [INCREMENT](state){
     state.count++
+  },
+  [DECREMENT](state){
+    state.count--
   }
 }
 

@@ -2,20 +2,25 @@
   <div id="app">
     <el-button type="primary" @click="increment">增加</el-button>
     <el-button type="default" @click="decrement">减少</el-button>
-    <el-button type="default"  @click="clickOdd">偶数才能增加</el-button>
-    <el-button type="default"  @click="clickAsync">点击异步</el-button>
     <div>
       现在数字为: {{ count}},它现在是
     </div>
+    <Index></Index>
   </div>
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld'
+import Index from './components/Index'
 import {mapGetters, mapActions} from 'vuex'
-
+import zkTimeDown from './components/zkTimeDown/zkTimeDown.vue'
 export default {
   name: 'app',
+  data () {
+    return {
+      endTime : '2017-11-21 11:01:00',
+      message: ''
+    }
+  },
   computed:mapGetters([
     'count',
     'getOdd'
@@ -23,9 +28,10 @@ export default {
   methods:mapActions([
     'increment',
     'decrement',
-    'clickOdd',
-    'clickAsync'
   ]),
+  components : {
+    Index
+  }
 
 }
 </script>
