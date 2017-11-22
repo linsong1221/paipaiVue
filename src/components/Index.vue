@@ -1,25 +1,16 @@
 <template>
   <div>
-    <div class="row">
-      <div class="col-xs-12">
-        <ul>
-          <li><a href="default.asp">Home</a></li>
-          <li><a href="news.asp">News</a></li>
-          <li><a href="contact.asp">Contact</a></li>
-          <li><a href="about.asp">About</a></li>
-        </ul>
-      </div>
-    </div>
-
+    <Navigation></Navigation>
   </div>
 </template>
 <script>
+  import Navigation from '../components/nav/Navigation'
   export default {
-    data() {
-      return {
-      }
-    },
-    methods: {
+    components : {
+      Navigation
     }
   }
 </script>
+<style>
+
+</style>

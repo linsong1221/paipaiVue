@@ -1,45 +1,44 @@
 <template>
-  <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-    <el-menu-item index="1">处理中心</el-menu-item>
-    <el-submenu index="2">
-      <template slot="title">我的工作台</template>
-      <el-menu-item index="2-1">选项1</el-menu-item>
-      <el-menu-item index="2-2">选项2</el-menu-item>
-      <el-menu-item index="2-3">选项3</el-menu-item>
-    </el-submenu>
-    <el-menu-item index="3"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>
-  </el-menu>
-  <div class="line"></div>
-  <el-menu
-    :default-active="activeIndex2"
-    class="el-menu-demo"
-    mode="horizontal"
-    @select="handleSelect"
-    background-color="#545c64"
-    text-color="#fff"
-    active-text-color="#ffd04b">
-    <el-menu-item index="1">处理中心</el-menu-item>
-    <el-submenu index="2">
-      <template slot="title">我的工作台</template>
-      <el-menu-item index="2-1">选项1</el-menu-item>
-      <el-menu-item index="2-2">选项2</el-menu-item>
-      <el-menu-item index="2-3">选项3</el-menu-item>
-    </el-submenu>
-    <el-menu-item index="3"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>
-  </el-menu>
+  <div>
+    <div class="row">
+      <div class="col-xs-offset-3 col-xs-6">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="">Kids</a></li>
+          <li><a href="">Sports</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </template>
 <script>
   export default {
     data() {
       return {
-        activeIndex: '1',
-        activeIndex2: '1'
-      };
+      }
     },
     methods: {
-      handleSelect(key, keyPath) {
-        console.log(key, keyPath);
-      }
     }
   }
 </script>
+<style>
+  ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    font-size:15px;
+  }
+  li{
+    display:inline;
+    float:left;
+  }
+  a{
+    display:block;
+    width:100px;
+    color: #8c2830;
+    font-weight:600;
+  }
+</style>
