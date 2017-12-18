@@ -1,16 +1,20 @@
 <template>
   <div>
     <Navigation></Navigation>
-    <content></content>
+    <!--<Content></Content>-->
+    <router-view></router-view>
+    <footers></footers>
   </div>
 </template>
 <script>
-  import Navigation from '../components/nav/Navigation'
-  import content from '../components/content'
+  import Navigation from './nav/Navigation'
+//  import Content from '../components/content/Contents'
+  import footers from './footer/index'
   export default {
     components : {
       Navigation,
-      content
+      footers
+//      Content,
     }
   }
 </script>

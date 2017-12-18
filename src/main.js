@@ -6,11 +6,21 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import './element-ui.js'
 import store from './store/'
-Vue.config.productionTip = false
+import VueRouter from 'vue-router'
+import routerConfig from './router'
+Vue.use(VueRouter)
+
+const router = new VueRouter({
+  mode:'history',
+  routerConfig
+})
+// Vue.config.productionTip = false
+Vue.use(VueRouter)
 
 /* eslint-disable no-new */
 new Vue({
   store,
+  router,
   el: '#app',
   template: '<App/>',
   components: { App }

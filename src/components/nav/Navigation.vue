@@ -4,12 +4,14 @@
       <div style="height: 50px;width: 960px; margin:0 auto">
         <div>
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">News</a></li>
-            <li><a href="">Kids</a></li>
-            <li><a href="">Sports</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">About</a></li>
+            <router-link tag="li" to="/home">
+              <a href="javascript:;">Home</a>
+            </router-link>
+            <router-link tag="li" to="/news">
+              <a href="javascript:;">News</a>
+            </router-link>
+            <!--<li><a href="">Home</a></li>-->
+            <!--<li><a href="">News</a></li>-->
           </ul>
         </div>
       </div>
