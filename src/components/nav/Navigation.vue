@@ -4,7 +4,7 @@
       <div style="height: 50px;width: 960px; margin:0 auto">
         <div>
           <ul>
-            <router-link tag="li" to="/home">
+            <router-link tag="li" to="/">
               <a href="javascript:;">Home</a>
             </router-link>
             <router-link tag="li" to="/news">

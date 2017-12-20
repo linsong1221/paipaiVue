@@ -2,7 +2,7 @@ import Home from './components/content/Contents.vue'
 import News from './components/news/News.vue'
 export default[
   {
-    path:'/home',
+    path:'/',
     component: Home
   },
   {

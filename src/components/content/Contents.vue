@@ -1,12 +1,35 @@
 <template>
   <div>
-    This is content
-    <div class="list-group">
-      <button type="button" class="list-group-item">Cras justo odio</button>
-      <button type="button" class="list-group-item">Dapibus ac facilisis in</button>
-      <button type="button" class="list-group-item">Morbi leo risus</button>
-      <button type="button" class="list-group-item">Porta ac consectetur ac</button>
-      <button type="button" class="list-group-item">Vestibulum at eros</button>
+    <div>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators" style="margin: 0 auto;">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" style="text-align:center;">
+        <div class="item active">
+          <img src="../../assets/img/bk001.jpg"/>
+        </div>
+        <div class="item">
+          <img src="../../assets/img/bk002.jpg"/>
+        </div>
+        <div class="item">
+          <img src="../../assets/img/bk003.jpg"/>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
     </div>
   </div>
 </template>
