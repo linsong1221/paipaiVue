@@ -11,13 +11,13 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner" style="text-align:center;">
         <div class="item active">
-          <img src="../../assets/img/bk001.jpg"/>
+          <img style="height: 640px;" src="../../assets/img/banner01.jpg"/>
         </div>
         <div class="item">
-          <img src="../../assets/img/bk002.jpg"/>
+          <img style="height: 640px;" src="../../assets/img/bk002.jpg"/>
         </div>
         <div class="item">
-          <img src="../../assets/img/bk003.jpg"/>
+          <img style="height: 640px;" src="../../assets/img/bk003.jpg"/>
         </div>
       </div>
 
@@ -29,19 +29,21 @@
         <span class="glyphicon glyphicon-chevron-right"></span>
       </a>
     </div>
-    <div class="margin-top-10" style="width: 1250px; margin: 20px auto;">
-      <div class="row">
-        <div class="col-xs-8">
-          22222222222222222222222
-        </div>
-        <div style="height: 200px;border: 1px solid #dedede;" class="col-xs-4">
-          <div class="row" style="border-bottom: 1px solid #dedede; height: 40px;line-height: 40px;">
-            <li class="home-tab tab-active">会员中心</li>
-            <li class="home-tab">广告中心</li>
-          </div>
-        </div>
-
+    <div style="margin-top: 20px;">
+      <!--<div class="col-xs-3">
+        <img style="width: 250px;" src="../../assets/img/con1.jpg"/>
       </div>
+      <div class="col-xs-3">
+        <img style="width: 250px;" src="../../assets/img/con2.jpg"/>
+      </div>
+      <div class="col-xs-3">
+        <img style="width: 250px;" src="../../assets/img/con3.jpg"/>
+      </div>
+      <div class="col-xs-3">
+        <img style="width: 250px;"  src="../../assets/img/con4.jpg"/>
+      </div>-->
+      <img src="../../assets/img/q01.jpg"/>
+      <img src="../../assets/img/q02.jpg"/>
     </div>
 
   </div>
@@ -72,5 +74,8 @@
   }
   .tab-active {
     color: #da1414;
+  }
+  .carousel-indicators{
+    width:50px;
   }
 </style>

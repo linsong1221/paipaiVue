@@ -3,7 +3,6 @@
     <Navigation></Navigation>
     <!--<Content></Content>-->
     <router-view></router-view>
-    <footers></footers>
   </div>
 </template>
 <script>
