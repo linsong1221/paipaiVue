@@ -64,7 +64,7 @@
 <style>
   ul{
     list-style-type:none;
-    margin:0;
+    margin:0 !important;
     padding:0;
     font-size:15px;
     text-align: center;
@@ -76,7 +76,7 @@
   a{
     display:block;
     width:100px;
-    color: #ffffff;
+    color: #ffffff !important;
     font-weight:600;
   }
   .nav{

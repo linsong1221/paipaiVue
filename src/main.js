@@ -17,7 +17,7 @@ Vue.use(ElementUI)
 Vue.use(VueRouter)
 
 const router = new VueRouter({
-  mode:'history',
+  // mode:'history',
   routes:routerConfig
 })
 // Vue.config.productionTip = false
