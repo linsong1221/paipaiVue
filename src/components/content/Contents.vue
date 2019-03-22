@@ -27,16 +27,16 @@
 
     <div style="width: 1190px; margin-left: auto;margin-right: auto; height: 1000px; padding-top: 100px;">
       <div style="width: 100%; height: 267px;">
-        <div style="float: left;">
+        <div class="geu-home-con" style="float: left;">
           <img width="272px" height="267px" src="../../assets/img/con1.png"/>
         </div>
-        <div style="float: left; margin-left: 34px;">
+        <div class="geu-home-con" style="float: left; margin-left: 34px;">
           <img width="272px" height="267px" src="../../assets/img/con2.png"/>
         </div>
-        <div style="float: left; margin-left: 34px;">
+        <div class="geu-home-con" style="float: left; margin-left: 34px;">
           <img width="272px" height="267px" src="../../assets/img/con3.png"/>
         </div>
-        <div style="float: right; margin-left: 34px;">
+        <div class="geu-home-con" style="float: right; margin-left: 34px;">
           <img width="272px" height="267px" src="../../assets/img/con4.png"/>
         </div>
 
@@ -113,5 +113,16 @@
     height: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .geu-home-con{
+    overflow: hidden;
+  }
+  .geu-home-con img{
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  .geu-home-con img:hover{
+    transform: scale(1.3);
   }
 </style>
