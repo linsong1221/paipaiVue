@@ -1,16 +1,19 @@
 <template>
   <div>
+    <Header></Header>
     <Navigation></Navigation>
     <!--<Content></Content>-->
     <router-view></router-view>
   </div>
 </template>
 <script>
+  import Header from './header/Header'
   import Navigation from './nav/Navigation'
 //  import Content from '../components/content/Contents'
   import footers from './footer/index'
   export default {
     components : {
+      Header,
       Navigation,
       footers
 //      Content,
@@ -21,7 +24,5 @@
 
 </style>
 <style>
-  .margin-top-10 {
-    margin-top:10px;
-  }
+
 </style>

@@ -1,53 +1,31 @@
 <template>
   <div>
-    <header style="background-color:rgba(0,0,0,0.5); position: absolute; z-index: 2;" class="nav">
-      <div style="height: 70px; margin:0 auto">
-        <div style="margin-left: 20px;" class="col-xs-2">
-          <img src="../../assets/img/logo.png"/>
-        </div>
-        <div class="col-xs-1"></div>
-        <div>
-          <ul class="nav-ul">
-            <router-link tag="li" to="/">
-              <a href="javascript:;">HOME</a>
-            </router-link>
-            <li to="/news"  role="presentation" class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                회사소개<span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="services.html">CEO인사말</a></li>
-                <li><a href="services.html">회사연혁</a></li>
-                <li><a href="services.html">찾아오시는길</a></li>
-              </ul>
-            </li>
-            <router-link tag="li" to="/news">
-              <a href="javascript:;">메뉴</a>
-            </router-link>
-            <router-link tag="li" to="/news">
-              <a href="javascript:;">창업안내</a>
-            </router-link>
-            <li to="/news"  role="presentation" class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                고객센터<span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="services.html">공지사항</a></li>
-                <li><a href="services.html">뉴스</a></li>
-                <li><a href="services.html">상담/문의</a></li>
-                <li><a href="services.html">이벤트</a></li>
-              </ul>
-            </li>
-            <router-link tag="li" to="/test">
-              <a href="javascript:;">Test</a>
-            </router-link>
-          </ul>
-        </div>
-      </div>
-    </header>
+    <div class="col-xs-1"></div>
+    <div style="position: relative; z-index: 1" class="col-xs-3">
+      <img style="width: 65px; height: 65px;" src="../../assets/img/logo.png"/>
+      <img style="width: 100px; height: 35px; margin-left: 20px;" src="../../assets/img/logo-font.png"/>
 
+    </div>
+    <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
+      <el-menu-item style="margin-right: 60px;" index="1">首页</el-menu-item>
+      <!--<el-submenu index="2">
+        <template slot="title">我的工作台</template>
+        <el-menu-item index="2-1">选项1</el-menu-item>
+        <el-menu-item index="2-2">选项2</el-menu-item>
+        <el-menu-item index="2-3">选项3</el-menu-item>
+        <el-submenu index="2-4">
+          <template slot="title">选项4</template>
+          <el-menu-item index="2-4-1">选项1</el-menu-item>
+          <el-menu-item index="2-4-2">选项2</el-menu-item>
+          <el-menu-item index="2-4-3">选项3</el-menu-item>
+        </el-submenu>
+      </el-submenu>-->
+      <el-menu-item style="margin-right: 60px;" index="2">公司介绍</el-menu-item>
+      <el-menu-item style="margin-right: 60px;" index="4"><a href="https://www.ele.me" target="_blank">外贸业务</a></el-menu-item>
+      <el-menu-item style="margin-right: 60px;" index="4"><a href="https://www.ele.me" target="_blank">新闻中心</a></el-menu-item>
+      <el-menu-item style="margin-right: 60px;" index="4"><a href="https://www.ele.me" target="_blank">联系我们</a></el-menu-item>
+    </el-menu>
     <div class="line"></div>
-
   </div>
 
 </template>
@@ -55,58 +33,17 @@
   export default {
     data() {
       return {
+        activeIndex: '1',
+        activeIndex2: '1'
       }
     },
     methods: {
+      handleSelect(key, keyPath) {
+        console.log(key, keyPath);
+      }
     }
   }
 </script>
 <style>
-  ul{
-    list-style-type:none;
-    margin:0 !important;
-    padding:0;
-    font-size:15px;
-    text-align: center;
-  }
-  li{
-    display:inline;
-    float:left;
-  }
-  a{
-    display:block;
-    width:100px;
-    color: #ffffff !important;
-    font-weight:600;
-  }
-  .nav{
-    background-color: black;
-    height:85px;
-    line-height:85px;
-    width:100%;
-  }
-  a:focus, a:hover{
-    color: blue;
-  }
-  .nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
-    background-color: transparent;
-  }
-  .dropdown-menu{
-    min-width: 130px;
-    padding: 10px 0;
-    margin: 0;
-    background-color: #EC6E2D;
-  }
-  .dropdown-menu > li > a{
-    display: block !important;
-    padding: 8px 21px;
 
-    width: 128px;
-  }
-  .nav > ul{
-    text-align: center;
-  }
-  .nav-ul li{
-    padding:0 10px 0 10px;
-  }
 </style>
