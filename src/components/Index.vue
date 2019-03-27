@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="body-width">
     <Header></Header>
     <Navigation></Navigation>
     <!--<Content></Content>-->
@@ -22,8 +22,7 @@
   }
 </script>
 <style>
-
-</style>
-<style>
-
+  .body-width{
+    min-width: 1280px;max-width: 100%; margin: auto;
+  }
 </style>
