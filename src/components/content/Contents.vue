@@ -77,7 +77,7 @@
 
       <div  class="col-xs-12 margin-top-50">
         <div class="col-xs-offset-4 col-xs-4 text-center">
-          <span class="geu-home-letwo-title">产品服务</span>
+          <span v-text="$t('m.home')" class="geu-home-letwo-title"></span>
         </div>
 
         <div class="col-xs-offset-4 col-xs-4 text-center">
@@ -173,8 +173,6 @@
         </div>
       </div>
     </div>
-
-
     <div class="geu-home-aboutus-back">
 
       <div  class="geu-home-aboutus-div">
@@ -190,6 +188,7 @@
         </div>
       </div>
     </div>
+
   </div>
 </template>
 
