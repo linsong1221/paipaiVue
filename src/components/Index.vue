@@ -23,6 +23,8 @@
 </script>
 <style>
   .body-width{
-    min-width: 1280px;max-width: 100%; margin: auto;
+    min-width: 1220px;
+    max-width: 100%;
+    margin: auto;
   }
 </style>
