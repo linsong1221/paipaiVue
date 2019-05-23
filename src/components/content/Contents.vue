@@ -113,7 +113,7 @@
             <div class="col-xs-12 margin-top-50">
               <span class="geu-home-philosophy-center-content">公司秉承“以人为本、追求超越”的经营理念;恪守“诚信为本、客户至尊”为服务宗旨。</span>
             </div>
-            <div class="col-xs-12 martin-top-60">
+            <div class="col-xs-12 margin-top-60">
               <span class="geu-home-philosophy-bottom-content">OEM</span>
             </div>
             <div class="col-xs-12">
