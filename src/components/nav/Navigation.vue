@@ -7,11 +7,11 @@
 
     </div>
     <el-menu :default-active="this.$route.path" router  class="el-menu-demo" mode="horizontal" @select="handleSelect">
-      <el-menu-item v-text="$t('m.home')" style="margin-right: 60px;" index="/"></el-menu-item>
-      <el-menu-item v-text="$t('m.company')" style="margin-right: 60px;" index="company">/</el-menu-item>
-      <el-menu-item v-text="$t('m.trade')" style="margin-right: 60px;" index="3"><a href="https://www.ele.me" target="_blank">外贸业务</a></el-menu-item>
-      <el-menu-item v-text="$t('m.news')" style="margin-right: 60px;" index="4"><a href="https://www.ele.me" target="_blank">新闻中心</a></el-menu-item>
-      <el-menu-item v-text="$t('m.contact')" style="margin-right: 60px;" index="5"><a href="https://www.ele.me" target="_blank">联系我们</a></el-menu-item>
+      <el-menu-item v-text="$t('m.home')" style="margin-right: 60px; font-size: 16px;" index="/"></el-menu-item>
+      <el-menu-item v-text="$t('m.company')" style="margin-right: 60px; font-size: 16px;" index="company">/</el-menu-item>
+      <el-menu-item v-text="$t('m.trade')" style="margin-right: 60px; font-size: 16px;" index="business"></el-menu-item>
+      <el-menu-item v-text="$t('m.news')" style="margin-right: 60px; font-size: 16px;" index="news"></el-menu-item>
+      <el-menu-item v-text="$t('m.contact')" style="margin-right: 60px; font-size: 16px;" index="contactus"></el-menu-item>
     </el-menu>
     <div class="line"></div>
   </div>

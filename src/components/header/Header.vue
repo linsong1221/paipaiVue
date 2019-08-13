@@ -25,6 +25,7 @@
           </div>
         </div>
       </transition>
+      <router-link to="/uistyle">UiStyle</router-link>
     </div>
 
 

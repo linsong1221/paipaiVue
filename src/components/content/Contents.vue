@@ -99,7 +99,7 @@
             <div class="col-xs-12 margin-top-60">
               <span class="geu-home-philosophy-bottom-content">定制设计</span>
             </div>
-            <div class="col-xs-12">
+            <div class="col-xs-12 margin-top-10">
               <span class="geu-home-philosophy-footer-content">产品确认，海运/空运，通关配送。</span>
             </div>
           </div>
@@ -116,7 +116,7 @@
             <div class="col-xs-12 margin-top-60">
               <span class="geu-home-philosophy-bottom-content">OEM</span>
             </div>
-            <div class="col-xs-12">
+            <div class="col-xs-12 margin-top-10">
               <span class="geu-home-philosophy-footer-content">专业设计，提供优质产品。</span>
             </div>
           </div>
@@ -133,14 +133,12 @@
             <div class="col-xs-12 margin-top-60">
               <span class="geu-home-philosophy-bottom-content">访问工厂</span>
             </div>
-            <div class="col-xs-12">
+            <div class="col-xs-12 margin-top-10">
               <span class="geu-home-philosophy-footer-content">提供专业翻译人员，日程及住宿安排。</span>
             </div>
           </div>
         </div>
       </div>
-
-
 
     </div>
     <div class="geu-home-thinking-back">
@@ -168,23 +166,20 @@
         <div  class="col-xs-12 text-center margin-top-10">
           <span class="geu-home-thinking-content">我们坚信每一个成功项目都是良好合作的成果，我们共同思考和创新，帮助客户寻找接近目标受众最佳互动解决方案。</span>
         </div>
-        <div class="col-xs-12 text-center margin-top-40">
+        <div class="col-xs-12 text-center margin-top-80">
           <img class="geu-home-thinking-img" src="../../assets/img/home-con-icon4.png"/>
         </div>
       </div>
     </div>
+<!--    底部-->
     <div class="geu-home-aboutus-back">
-
-      <div  class="geu-home-aboutus-div">
-
+      <div class="geu-home-aboutus-div">
         <div class="col-xs-12 text-center margin-top-30">
           <span class="geu-home-aboutus-ch-title">关于我们 </span>
           <span class="geu-home-aboutus-en-title"> / about us</span>
         </div>
-        <div class="col-xs-12 margin-top-25">
-          <div class="col-xs-offset-1 col-xs-10 geu-home-aboutus-content-div" >
-            <span class="geu-home-aboutus-content">锦艾国际贸易（大连）有限公司，创立于2018年，公司业务涉及国内一般贸易、货物进出口、技术进出口等多个领域，主要经营各类电子产品,汽车零配件，百货，建筑材料，布料，办公与家居用品，服装以及设备。现拥有合作密切的专业产品供应商，提供优质产品，客商分布韩国、日本等国家。目前公司拥有良好的信誉、稳固丰富的货源、稳定的海外客户和广阔的市场网络，在“有诚信、服务好、效率高”的企业宗旨指引下，定能更加快速的成长，同时，也期待与更多国内外朋友合作，共商大业，共创辉煌</span>
-          </div>
+        <div class="col-xs-offset-1 col-xs-10 geu-home-aboutus-content-div margin-top-25" >
+          <span class="geu-home-aboutus-content">锦艾国际贸易（大连）有限公司，创立于2018年，公司业务涉及国内一般贸易、货物进出口、技术进出口等多个领域，主要经营各类电子产品,汽车零配件，百货，建筑材料，布料，办公与家居用品，服装以及设备。现拥有合作密切的专业产品供应商，提供优质产品，客商分布韩国、日本等国家。目前公司拥有良好的信誉、稳固丰富的货源、稳定的海外客户和广阔的市场网络，在“有诚信、服务好、效率高”的企业宗旨指引下，定能更加快速的成长，同时，也期待与更多国内外朋友合作，共商大业，共创辉煌</span>
         </div>
       </div>
     </div>
@@ -265,17 +260,17 @@
   .geu-home-leone-service-btitle{
     color: #000000;
     font-family: Microsoft YaHei;
-    font-size: 24px;
+    font-size: 28px;
   }
   .geu-home-leone-service-stitle{
     font-family: Arial,Helvetica,sans-serif;
-    font-size: 22px;
+    font-size: 24px;
     color: #999999;
   }
   .geu-home-leone-service-content{
     text-align: center;
     font-family: Microsoft YaHei;
-    font-size: 16px; color: #434a54;
+    font-size: 20px; color: #434a54;
   }
 
   .geu-home-letwo-back-div{
@@ -305,7 +300,7 @@
   }
   .geu-home-letwo-content {
     color: #cfd9d5;
-    font-size: 12px;
+    font-size: 16px;
   }
   .geu-home-letwo-philosophy-div{
     margin: 0 auto;
@@ -320,7 +315,6 @@
   .geu-home-letwo-philosophy-parttwo{
     @extend .geu-home-letwo-philosophy-partone;
     background-color: rgb(213, 224, 221);
-
   }
   .geu-home-letwo-philosophy-partthree{
     @extend  .geu-home-letwo-philosophy-partone;
@@ -338,14 +332,15 @@
   .geu-home-philosophy-center-content{
     color: #5d6763;
     line-height: 2;
+    font-size: 15px;
   }
   .geu-home-philosophy-bottom-content{
     color: #5d6763;
-    font-size: 16px;
+    font-size: 18px;
   }
   .geu-home-philosophy-footer-content{
     color: #5d6763;
-    font-size: 14px;
+    font-size: 16px;
   }
   .geu-home-thinking-back{
     height: 800px;
@@ -360,7 +355,7 @@
   .geu-home-thinking-ch-title{
     color: #000000;
     font-family: cursive;
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .geu-home-thinking-hr{
@@ -374,11 +369,11 @@
   .geu-home-thinking-en-title{
     color: #000000;
     font-family: Arial Black;
-    font-size: 36px;
+    font-size: 38px;
   }
   .geu-home-thinking-content{
     color: #999999;
-    font-size: 14px;
+    font-size: 18px;
   }
   .geu-home-thinking-img{
     width: 675px;
