@@ -1,18 +1,43 @@
 <template>
   <div id="app">
-    <Index></Index>
+    <div v-if="ifMobile">
+      <WapIndex></WapIndex>
+    </div>
+    <div v-else>
+      <Index></Index>
+    </div>
+
   </div>
 </template>
 <script>
   import Index from './components/Index'
+  import WapIndex from './wap/WapIndex'
   export default {
     name: 'app',
     data () {
       return {
+        ifMobile: false
       }
     },
     components : {
-      Index
+      Index,
+      WapIndex
+    },
+    mounted() {
+      if (this._isMobile()) {
+        this.ifMobile = true;
+      } else {
+        this.ifMobile = false;
+      }
+    },
+    methods :{
+      _isMobile () {
+        if(/Android|webOS| iPhone | iPad | iPod |BlackBerry|opera mini|opera mobile|appleWebkit.*mobile|mobile/i.test(
+          navigator.userAgent)) {
+          return true;
+        }
+      }
+
     }
   }
 </script>

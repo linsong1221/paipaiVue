@@ -7,7 +7,7 @@
 
     </div>
     <el-menu :default-active="this.$route.path" router  class="el-menu-demo" mode="horizontal" @select="handleSelect">
-      <el-menu-item v-text="$t('m.home')" style="margin-right: 60px; font-size: 16px;" index="/"></el-menu-item>
+      <el-menu-item v-text="$t('m.home')" style="margin-right: 60px; font-size: 16px;" index="/index"></el-menu-item>
       <el-menu-item v-text="$t('m.company')" style="margin-right: 60px; font-size: 16px;" index="company">/</el-menu-item>
       <el-menu-item v-text="$t('m.trade')" style="margin-right: 60px; font-size: 16px;" index="business"></el-menu-item>
       <el-menu-item v-text="$t('m.news')" style="margin-right: 60px; font-size: 16px;" index="news"></el-menu-item>

@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app1">
     <el-button type="primary" @click="increment">增加</el-button>
     <el-button type="default" @click="decrement">减少</el-button>
     <div>
@@ -12,7 +12,7 @@
 import Index from './components/Index'
 import {mapGetters, mapActions} from 'vuex'
 export default {
-  name: 'app',
+  name: 'app1',
   data () {
     return {
       endTime : '2017-11-21 11:01:00',

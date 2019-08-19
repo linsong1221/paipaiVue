@@ -1,6 +1,6 @@
 <template>
   <div class="body-width">
-    <Header></Header>
+    <MeuHeader></MeuHeader>
     <Navigation></Navigation>
     <!--<Content></Content>-->
     <router-view></router-view>
@@ -8,13 +8,13 @@
   </div>
 </template>
 <script>
-  import Header from './header/Header'
+  import MeuHeader from './header/MeuHeader'
   import Navigation from './nav/Navigation'
 //  import Content from '../components/content/Contents'
   import footers from './footer/index'
   export default {
     components : {
-      Header,
+      MeuHeader,
       Navigation,
       footers
 //      Content,

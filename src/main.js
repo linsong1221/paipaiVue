@@ -12,6 +12,9 @@ import routerConfig from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
+// 引入vant-ui公共部分
+import './vant-ui.js'
+
 /*  国际化引入 */
 import VueI18n from 'vue-i18n'
 
@@ -26,8 +29,22 @@ const i18n = new VueI18n({
   }
 })
 
-/*  国际化引入结束 */
+// 使用vant ui
+// import { Button  } from 'vant'
+// Vue.use(Button)
+//
+// import { NavBar } from 'vant';
+// Vue.use(NavBar);
+//
+// import { Pagination } from 'vant';
+//
+// Vue.use(Pagination);
+//
+// import { Row, Col } from 'vant';
+//
+// Vue.use(Row).use(Col);
 
+/*  国际化引入结束 */
 
 Vue.use(ElementUI)
 
@@ -35,7 +52,7 @@ Vue.use(ElementUI)
 Vue.use(VueRouter)
 
 const router = new VueRouter({
-  // mode:'history',
+  mode:'history',
   routes:routerConfig
 })
 // Vue.config.productionTip = false

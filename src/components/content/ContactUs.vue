@@ -1,6 +1,11 @@
 <template>
     <div style="height: 1600px;">
       <img style="width:100%;height: auto;" src="../../assets/img/news_banner.jpg"/>
+      <van-button type="default">默认按钮</van-button>
+      <van-button type="primary">主要按钮</van-button>
+      <van-button type="info">信息按钮</van-button>
+      <van-button type="warning">警告按钮</van-button>
+      <van-button type="danger">危险按钮</van-button>
       <div class="geu-common-auto-width" style="height: 1000px;">
         <div class="col-xs-12 margin-top-50">
           <div class="col-xs-6">

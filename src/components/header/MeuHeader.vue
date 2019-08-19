@@ -75,11 +75,6 @@
         changeLanData: false,
         show:false
       }
-
-
-
-
-
     },
     methods: {
       languageToggle(){
