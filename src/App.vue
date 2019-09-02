@@ -1,11 +1,12 @@
 <template>
   <div id="app">
-    <div v-if="ifMobile">
-      <WapIndex></WapIndex>
-    </div>
-    <div v-else>
-      <Index></Index>
-    </div>
+<!--    <div v-if="ifMobile">-->
+<!--      <WapIndex></WapIndex>-->
+<!--    </div>-->
+<!--    <div v-else>-->
+<!--      <Index></Index>-->
+<!--    </div>-->
+    <Index></Index>
 
   </div>
 </template>
@@ -16,7 +17,7 @@
     name: 'app',
     data () {
       return {
-        ifMobile: false
+        ifMobile: false,
       }
     },
     components : {
@@ -30,13 +31,19 @@
         this.ifMobile = false;
       }
     },
+    updated() {
+
+      window.scroll(0,0);
+
+    },
     methods :{
       _isMobile () {
         if(/Android|webOS| iPhone | iPad | iPod |BlackBerry|opera mini|opera mobile|appleWebkit.*mobile|mobile/i.test(
           navigator.userAgent)) {
           return true;
         }
-      }
+      },
+
 
     }
   }

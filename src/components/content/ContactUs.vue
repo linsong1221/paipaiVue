@@ -1,11 +1,7 @@
 <template>
     <div style="height: 1600px;">
-      <img style="width:100%;height: auto;" src="../../assets/img/news_banner.jpg"/>
-      <van-button type="default">默认按钮</van-button>
-      <van-button type="primary">主要按钮</van-button>
-      <van-button type="info">信息按钮</van-button>
-      <van-button type="warning">警告按钮</van-button>
-      <van-button type="danger">危险按钮</van-button>
+<!--      <img src="../../assets/111.jpg"/>-->
+      <img width="100%" src="../../assets/contactusp3.png"/>
       <div class="geu-common-auto-width" style="height: 1000px;">
         <div class="col-xs-12 margin-top-50">
           <div class="col-xs-6">
@@ -112,7 +108,7 @@
         submitForm(formName) {
           this.$refs[formName].validate((valid) => {
             if (valid) {
-              alert('submit!');
+              this.$message('此功能暂不可用，请联系相关人员');
             } else {
               console.log('error submit!!');
               return false;

@@ -1,11 +1,41 @@
 export const m = {
   changeLan:'언어 전환',
+  languageSwitch:'중국어로 전환하시겠습니까？',
   sure:'확인',
   languageCancel:'취소',
-  home: '홈',//网易云音乐
-  company: 'Company',//发现音乐
-  myMusic: 'MY MUSIC',//我的音乐
-  friend: 'FRIEND',//朋友
-  musician: 'MUSICIAN',//音乐人
-  download: 'DOWNLOAD'//下载客户端
+  home: '홈',
+  company: '회사소계',
+  trade: '무역업무',
+  news: '뉴스',
+  contact: '연락하기',
+  homeContent1: '우수한 제품 품질',
+  homeContent2: '풍부한 무역 경험',
+  homeContent3: '완비된 애프터서비스',
+  homeContent4: '국제물류대리',
+  homeContent5: '서비스 항목 / ',
+  homeContent6: '당사는 고객 체험의 편리에 집중하는 것으로서 고객에게 완벽한 비즈니스 연구, 제품 제공, 제품디자인,',
+  homeContent7: 'OEM 맞춤 제작, 그리고 빠른 운송 방안을 사용하여 우수한 서비스를 제공하는 회사입니다.',
+  homeContent8: '홈',
+  homeContent9: '빠른 응답',
+  homeContent10: '저희는 7x24시간의 온라인 서비스를 제공하며 언제 어디서나 귀하를 위해 업계 선두의 응답 속도를 달성합니다.',
+  homeContent11: '맞춤 설계',
+  homeContent12: '제품 확인, 해운/공수, 통관 배송',
+  homeContent13: '최고의 성실',
+  homeContent14: '회사는 고객을 근본으로 하고 초월을 추구한다는 경영이념, \'성실, 고객첫자리\'를 서비스관념으로 받든다.',
+  homeContent15: 'OEM',
+  homeContent16: '전문적인 디자인으로 우수한 품질의 제품 제공',
+  homeContent17: '부단한 창조를 견지',
+  homeContent18: '창의성을 부단히 개척하고 시대와 함께 나아가며 끊임없이 이노베이션 국면을 개척하여 회사의 도약을 실현해 나가고 있습니다.',
+  homeContent19: '공장 방문',
+  homeContent20: '전문 통역사, 일정 및 숙박 스케줄을 제공합니다.',
+  homeContent21: '우리의 사고방식',
+  homeContent22: '고객의 각도로 문제를 생각하며 앞선 전략의 사고 패턴으로 관례를 깨는 것을 견지합니다.',
+  homeContent23: '매개 성공적인 프러젝트는 좋은 협력과 떨어질수 없다고 믿습니다. 같이 사고하고 창신하여 고객을 도와 재일 성공적인 방안을  내놓는것이 우리의 임무입니다',
+  homeContent24: '策略',
+  homeContent25: '创意',
+  homeContent26: '营销',
+  homeContent27: '价值',
+  homeContent28: '关于我们',
+  homeContent29: '锦艾国际贸易（大连）有限公司，创立于2018年，公司业务涉及国内一般贸易、货物进出口、技术进出口等多个领域，主要经营各类电子产品,汽车零配件，百货，建筑材料，布料，办公与家居用品，服装以及设备。现拥有合作密切的专业产品供应商，提供优质产品，客商分布韩国、日本等国家。目前公司拥有良好的信誉、稳固丰富的货源、稳定的海外客户和广阔的市场网络，在“有诚信、服务好、效率高”的企业宗旨指引下，定能更加快速的成长，同时，也期待与更多国内外朋友合作，共商大业，共创辉煌',
+
 }

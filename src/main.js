@@ -53,7 +53,14 @@ Vue.use(VueRouter)
 
 const router = new VueRouter({
   mode:'history',
-  routes:routerConfig
+  routes:routerConfig,
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { x: 0, y: 0 }
+    }
+  }
 })
 // Vue.config.productionTip = false
 Vue.use(VueRouter)

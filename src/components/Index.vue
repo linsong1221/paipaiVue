@@ -3,7 +3,7 @@
     <MeuHeader></MeuHeader>
     <Navigation></Navigation>
     <!--<Content></Content>-->
-    <router-view></router-view>
+    <router-view v-if="isRouterAlive"></router-view>
     <footers></footers>
   </div>
 </template>
@@ -18,7 +18,25 @@
       Navigation,
       footers
 //      Content,
-    }
+    },
+    provide (){
+      return {
+        reload: this.reload
+      }
+    },
+    methods :{
+      reload (){
+        this.isRouterAlive = false;
+        this.$nextTick(function () {
+          this.isRouterAlive = true
+        })
+      }
+    },
+    data () {
+      return {
+        isRouterAlive: true
+      }
+    },
   }
 </script>
 <style>

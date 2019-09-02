@@ -1,13 +1,8 @@
 <template>
     <div>
-      <div style="height: 920px;">
-        <img  style="width: 100%;" src="../../assets/img/banner1.jpeg"/>
+      <div style="height: 478px;">
+        <img style="height: 478px; width: 100%;" src="../../assets/img/banner1.jpeg"/>
       </div>
-
-
-
-
-
       <div style="height: 300px;" class="geu-common-auto-width margin-top-100">
         <div class="col-xs-12 margin-top-40">
           <div class="col-xs-1"></div>
