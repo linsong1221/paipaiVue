@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-<!--    <div v-if="ifMobile">-->
-<!--      <WapIndex></WapIndex>-->
-<!--    </div>-->
-<!--    <div v-else>-->
-<!--      <Index></Index>-->
-<!--    </div>-->
-    <Index></Index>
+    <div v-if="ifMobile">
+      <WapIndex></WapIndex>
+    </div>
+    <div v-else>
+      <Index></Index>
+    </div>
+<!--    <Index></Index>-->
 
   </div>
 </template>

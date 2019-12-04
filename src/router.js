@@ -25,128 +25,78 @@ sessionStorage.setItem('flag',routerFlag);
 var flagRouter = JSON.parse(sessionStorage.getItem('flag'));
 
 let aaa = []
-// if (flagRouter) {
-//   aaa = [
-//     {
-//       path:'/',
-//       name:'/',
-//       component: Home
-//     },
-//     {
-//       path:'/index',
-//       name:'/index',
-//       component: Home
-//     },
-//     {
-//       path:'/news',
-//       component:News
-//     },
-//     {
-//       path:'/test',
-//       component:Test
-//     },
-//     {
-//       path:'/company',
-//       name:'company',
-//       component:Company
-//     },
-//     {
-//       path:'/business',
-//       name:'business',
-//       component:Business
-//     },
-//     {
-//       path:'/contactus',
-//       name:'contactus',
-//       component:ContactUs
-//     },
-//     {
-//       path:'/uistyle',
-//       name:'uistyle',
-//       component:UiStyle
-//     },
-//     {
-//       path:'/uistyle',
-//       name:'uistyle',
-//       component:UiStyle
-//     },
-//     {
-//       path:'/wap/news',
-//       name:'/wap/news',
-//       component:wapNews
-//     }
-//   ]
-// } else {
-//   aaa = [
-//     {
-//       path:'/',
-//       name:'/',
-//       component: wapHome
-//     },
-//     {
-//       path:'/wap/index',
-//       name:'/wap/index',
-//       component: wapHome
-//     },
-//     {
-//       path:'/wap/news',
-//       name:'/wap/news',
-//       component:wapNews
-//     }
-//   ]
-// }
+if (flagRouter) {
+  aaa = [
+    {
+      path:'/',
+      name:'/',
+      component: Home
+    },
+    {
+      path:'/index',
+      name:'/index',
+      component: Home
+    },
+    {
+      path:'/news',
+      name:'/news',
+      component:News
+    },
+    {
+      path:'/test',
+      component:Test
+    },
+    {
+      path:'/company',
+      name:'company',
+      component:Company
+    },
+    {
+      path:'/business',
+      name:'business',
+      component:Business
+    },
+    {
+      path:'/contactus',
+      name:'contactus',
+      component:ContactUs
+    },
+    {
+      path:'/uistyle',
+      name:'uistyle',
+      component:UiStyle
+    },
+    {
+      path:'/uistyle',
+      name:'uistyle',
+      component:UiStyle
+    },
+    {
+      path:'/newsdetail',
+      name:'newsdetail',
+      component:NewsDetail
+    },
+  ]
+} else {
+  aaa = [
+    {
+      path:'/',
+      name:'/',
+      component: wapHome
+    },
+    {
+      path:'/wap/index',
+      name:'wapHome',
+      component: wapHome
+    },
+    {
+      path:'/wap/news',
+      name:'wapNews',
+      component:wapNews
+    }
+  ]
+}
 
-aaa = [
-  {
-    path:'/',
-    name:'/',
-    component: Home
-  },
-  {
-    path:'/index',
-    name:'/index',
-    component: Home
-  },
-  {
-    name:'/news',
-    path:'/news',
-    component:News
-  },
-  {
-    path:'/test',
-    component:Test
-  },
-  {
-    path:'/company',
-    name:'company',
-    component:Company
-  },
-  {
-    path:'/business',
-    name:'business',
-    component:Business
-  },
-  {
-    path:'/contactus',
-    name:'contactus',
-    component:ContactUs
-  },
-  {
-    path:'/newsdetail',
-    name:'newsdetail',
-    component:NewsDetail
-  },
-  {
-    path:'/uistyle',
-    name:'uistyle',
-    component:UiStyle
-  },
-  {
-    path:'/wap/news',
-    name:'/wap/news',
-    component:wapNews
-  }
-]
 export default aaa;
 
 // if (!flagRouter) {

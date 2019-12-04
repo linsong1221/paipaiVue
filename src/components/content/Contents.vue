@@ -96,7 +96,7 @@
           <span v-text="$t('m.homeContent8')" class="geu-home-letwo-title"></span>
         </div>
 
-        <div class="col-xs-offset-4 col-xs-4 text-center">
+        <div class="col-xs-offset-4 col-xs-home-con-icon1.png4 text-center">
           <span class="geu-home-letwo-content">SERVICE PHILOSOPHY</span>
         </div>
       </div>

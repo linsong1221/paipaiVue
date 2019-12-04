@@ -36,3 +36,13 @@ Vue.use(Swipe).use(SwipeItem);
 import { Divider } from 'vant';
 
 Vue.use(Divider);
+
+import { Image } from 'vant';
+Vue.use(Image);
+
+import { Panel } from 'vant';
+
+Vue.use(Panel);
+
+import { Overlay } from 'vant';
+Vue.use(Overlay);
