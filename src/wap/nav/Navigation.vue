@@ -75,7 +75,7 @@
         onClickTitle(value){
           let flag = 1;
           if(value === '2'){
-            flag = 'wapNews'
+            flag = 'wapCompany'
           } else {
             flag = 'wapHome'
           }

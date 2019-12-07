@@ -7,7 +7,7 @@ import ContactUs from './components/content/ContactUs.vue'
 import UiStyle from './components/individual/UiStyle.vue'
 
 import wapHome from './wap/content/Contents.vue'
-import wapNews from './wap/news/News.vue'
+import wapCompany from './wap/content/Company.vue'
 import NewsDetail from "./components/news/NewsDetail";
 
 function IsPC(){
@@ -90,9 +90,9 @@ if (flagRouter) {
       component: wapHome
     },
     {
-      path:'/wap/news',
-      name:'wapNews',
-      component:wapNews
+      path:'/wap/company',
+      name:'wapCompany',
+      component:wapCompany
     }
   ]
 }
