@@ -5,12 +5,12 @@
 
 
     <div style="height: 478px;">
-      <img style="height: 478px; width: 100%;" src="../../assets/img/companyback.jpg"/>
+      <img style="height: 478px; width: 100%;" src="../../assets/img/companyback1.jpg"/>
     </div>
     <div style="height: 1450px;" class="geu-common-auto-width margin-top-65">
 
       <div class="col-xs-12">
-<!--        <div class="col-xs-1"></div>-->
+        <!--        <div class="col-xs-1"></div>-->
         <div class="col-xs-4">
           <hr class="geu-home-leone-service-hr"/>
         </div>
@@ -21,7 +21,7 @@
         <div class="col-xs-4">
           <hr class="geu-home-leone-service-hr"/>
         </div>
-<!--        <div class="col-xs-1"></div>-->
+        <!--        <div class="col-xs-1"></div>-->
       </div>
       <div class="col-xs-12 text-center margin-top-15">
         <span style="font-size: 24px; color: #999999;">做外贸服务，我们是认真的!</span>
@@ -58,8 +58,8 @@
         </div>
       </div>
       <div class="col-xs-12 margin-top-60">
-        <div class="col-xs-12">
-          <img style="height: 400px;" src="../../assets/img/companyPhoto2.jpg"/>
+        <div style="text-align: center;" class="col-xs-12">
+          <img  src="../../assets/img/companyPhoto3.jpg"/>
         </div>
       </div>
 

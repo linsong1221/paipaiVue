@@ -25,77 +25,130 @@ sessionStorage.setItem('flag',routerFlag);
 var flagRouter = JSON.parse(sessionStorage.getItem('flag'));
 
 let aaa = []
-if (flagRouter) {
-  aaa = [
-    {
-      path:'/',
-      name:'/',
-      component: Home
-    },
-    {
-      path:'/index',
-      name:'/index',
-      component: Home
-    },
-    {
-      path:'/news',
-      name:'/news',
-      component:News
-    },
-    {
-      path:'/test',
-      component:Test
-    },
-    {
-      path:'/company',
-      name:'company',
-      component:Company
-    },
-    {
-      path:'/business',
-      name:'business',
-      component:Business
-    },
-    {
-      path:'/contactus',
-      name:'contactus',
-      component:ContactUs
-    },
-    {
-      path:'/uistyle',
-      name:'uistyle',
-      component:UiStyle
-    },
-    {
-      path:'/uistyle',
-      name:'uistyle',
-      component:UiStyle
-    },
-    {
-      path:'/newsdetail',
-      name:'newsdetail',
-      component:NewsDetail
-    },
-  ]
-} else {
-  aaa = [
-    {
-      path:'/',
-      name:'/',
-      component: wapHome
-    },
-    {
-      path:'/wap/index',
-      name:'wapHome',
-      component: wapHome
-    },
-    {
-      path:'/wap/company',
-      name:'wapCompany',
-      component:wapCompany
-    }
-  ]
-}
+aaa = [
+  {
+    path:'/',
+    name:'/',
+    component: Home
+  },
+  {
+    path:'/index',
+    name:'/index',
+    component: Home
+  },
+  {
+    path:'/news',
+    name:'/news',
+    component:News
+  },
+  {
+    path:'/test',
+    component:Test
+  },
+  {
+    path:'/company',
+    name:'company',
+    component:Company
+  },
+  {
+    path:'/business',
+    name:'business',
+    component:Business
+  },
+  {
+    path:'/contactus',
+    name:'contactus',
+    component:ContactUs
+  },
+  {
+    path:'/uistyle',
+    name:'uistyle',
+    component:UiStyle
+  },
+  {
+    path:'/uistyle',
+    name:'uistyle',
+    component:UiStyle
+  },
+  {
+    path:'/newsdetail',
+    name:'newsdetail',
+    component:NewsDetail
+  },
+]
+
+// let aaa = []
+// if (flagRouter) {
+//   aaa = [
+//     {
+//       path:'/',
+//       name:'/',
+//       component: Home
+//     },
+//     {
+//       path:'/index',
+//       name:'/index',
+//       component: Home
+//     },
+//     {
+//       path:'/news',
+//       name:'/news',
+//       component:News
+//     },
+//     {
+//       path:'/test',
+//       component:Test
+//     },
+//     {
+//       path:'/company',
+//       name:'company',
+//       component:Company
+//     },
+//     {
+//       path:'/business',
+//       name:'business',
+//       component:Business
+//     },
+//     {
+//       path:'/contactus',
+//       name:'contactus',
+//       component:ContactUs
+//     },
+//     {
+//       path:'/uistyle',
+//       name:'uistyle',
+//       component:UiStyle
+//     },
+//     {
+//       path:'/uistyle',
+//       name:'uistyle',
+//       component:UiStyle
+//     },
+//     {
+//       path:'/newsdetail',
+//       name:'newsdetail',
+//       component:NewsDetail
+//     },
+//   ]
+// } else {
+//   aaa = [
+//     {
+//       path:'/',
+//       name:'/',
+//       component: wapHome
+//     },
+//     {
+//       path:'/wap/index',
+//       name:'wapHome',
+//       component: wapHome
+//     },
+//     {
+//       path:'/wap/company',
+//       name:'wapCompany',
+//       component:wapCompany
+//     }
+//   ]
+// }
 
 export default aaa;
 

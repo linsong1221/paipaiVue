@@ -10,7 +10,7 @@
 <script>
   import MeuHeader from './header/MeuHeader'
   import Navigation from './nav/Navigation'
-//  import Content from '../components/content/Contents'
+  //  import Content from '../components/content/Contents'
   import footers from './footer/index'
   export default {
     components : {

@@ -1,18 +1,70 @@
 <template>
     <div>
-        <div class="geu-common-auto-width" style="height: 500px;">
-          <div class="col-xs-12 margin-top-40">
-            <div class="nub_cot0">
-              <div class="nub_sub0">
-                联系我们
-              </div>
+      <div class="geu-common-auto-width" style="height: 500px;">
+        <div class="col-xs-12 margin-top-40">
+          <div class="nub_cot0">
+            <div class="nub_sub0">
+              联系我们
             </div>
           </div>
-          <div class="col-xs-12">
-            <hr class="geu-home-leone-service-hr">
-          </div>
-          <hr class="geu-home-thinking-hr">
         </div>
+        <div class="col-xs-12">
+          <hr class="geu-home-leone-service-hr">
+        </div>
+        <hr class="geu-home-thinking-hr">
+      </div>
+
+      <div style="height: 500px;">
+        <el-row style="margin-top: 50px;">
+          <el-form>
+            <el-form-item>
+              <el-row style="height: 45px;" v-for="(item, index) in listObj.data" :key="index" v-model="item.value" :gutter="5">
+                <el-col v-if="index === 0" :span="2">
+                  <el-checkbox-group>
+                    <el-checkbox>充值返余额：
+                    </el-checkbox>
+                  </el-checkbox-group>
+                </el-col>
+                <el-col v-if="index === 0" :span="3" :gutter="20">
+                  {{index + 1}}，单次充值金额大于等于
+                </el-col>
+                <el-col v-if="index !== 0" :offset="2" :span="3">
+                  {{index + 1}}，单次充值金额大于等于
+                </el-col>
+                <el-col :span="2">
+                  <el-input v-model="item.czname1"></el-input>
+                </el-col>
+                <el-col :span="3">
+                  元，奖励充值金额的
+                </el-col>
+                <el-col :span="2">
+                  <el-input  v-model="item.czname2"></el-input>
+                </el-col>
+                <el-col :span="1">
+                  %，分
+                </el-col>
+                <el-col :span="2">
+                  <el-input  v-model="item.czname3"></el-input>
+                </el-col>
+                <el-col :span="2">
+                  期完成返利，
+                </el-col>
+                <el-col :span="2">
+                  <el-input  v-model="item.czname4"></el-input>
+                </el-col>
+                <el-col :span="2">
+                  个自然日为一周期
+                </el-col>
+                <el-col :span="1">
+                  <i @click="delList(index)" style="color: #b6b6b6;cursor:pointer; " class="el-icon-error"></i>
+                </el-col>
+              </el-row>
+            </el-form-item>
+          </el-form>
+        </el-row>
+        <el-button @click="addList()">添加</el-button>
+        <el-button @click="onClickSubmit">提交数据</el-button>
+      </div>
 
 
       <table border="0" cellpadding="0" cellspacing="0" class="customTable">
@@ -21,20 +73,32 @@
           <th>序号</th>
           <th>部门</th>
           <th>责任人</th>
-          <th>项目名称/第三方检测费名称</th>
+          <th>项目名称</th>
           <th>预算总额</th>
-          <th>累计已计提金额</th>
-          <th>累计已报账金额</th>
+          <th>计提金额</th>
+          <th>报账金额</th>
           <th>完成率(%)</th>
-          <th>说明备注(采购项目经理)</th>
-          <th>说明备注(部门)</th>
+          <th>说明备注</th>
+          <th>说明备注</th>
           <th>说明备注(中心)</th>
         </tr>
         </thead>
         <tbody>
         <tr>
           <td>1</td>
-          <td>总部\采购共享中心\采购三部</td>
+          <td>11111111</td>
+          <td>219693.40</td>
+          <td>219693.40</td>
+          <td>219693.40</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>11111111</td>
+          <td>219693.40</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>111111</td>
           <td>219693.40</td>
         </tr>
         </tbody>
@@ -45,7 +109,28 @@
 
 <script>
     export default {
-        name: "UiStyle"
+      name: "UiStyle",
+      data() {
+        return {
+          listObj: {
+            data:[
+              // {czname1:'', czname2:'', czname3:'', czname4:''}
+            ]
+          },
+        };
+      },
+      methods: {
+        addList() {
+          this.listObj.data.push({czname1:'', czname2:'', czname3:'', czname4:''})
+        },
+        delList(index) {
+          alert(index)
+          this.listObj.data.splice(index, 1);
+        },
+        onClickSubmit() {
+          alert(JSON.stringify(this.listObj))
+        },
+      }
     }
 </script>
 

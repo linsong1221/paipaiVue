@@ -1,9 +1,9 @@
 <template>
   <div>
     <div style="background-color: #f5f5f5;height: 32px;">
-      <div @mouseover="languageToggle()" @mouseout="languageToggle()" :class=  "languageOption ? 'geu-header-language-hover' : 'geu-header-language'" class="col-xs-offset-9 col-xs-1 text-center">
-        <span v-text="$t('m.changeLan')"></span> <span class="glyphicon glyphicon-menu-down"></span>
-      </div>
+<!--      <div @mouseover="languageToggle()" @mouseout="languageToggle()" :class=  "languageOption ? 'geu-header-language-hover' : 'geu-header-language'" class="col-xs-offset-9 col-xs-1 text-center">-->
+<!--        <span v-text="$t('m.changeLan')"></span> <span class="glyphicon glyphicon-menu-down"></span>-->
+<!--      </div>-->
       <!--@mouseout="outStyle()"-->
     </div>
     <div style="position: relative">
@@ -25,7 +25,7 @@
           </div>
         </div>
       </transition>
-      <router-link to="/uistyle">UiStyle</router-link>
+      <!--      <router-link to="/uistyle">UiStyle</router-link>-->
     </div>
 
 

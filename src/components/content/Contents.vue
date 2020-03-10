@@ -14,7 +14,7 @@
           <div style="z-index: 1;font-size: 30px;color: yellow;position: absolute;" class="text-center col-xs-12 margin-top-100 animate two">
             <strong><span>G</span><span>E</span><span>U</span><span>M</span> <span>A</span><span>I</span> <span>I</span><span>N</span><span>T</span><span>E</span><span>R</span><span>N</span><span>A</span><span>T</span><span>I</span><span>O</span><span>N</span><span>A</span><span>L</span></strong>
           </div>
-          <img  src="../../assets/img/banner1.jpeg"/>
+          <img  src="../../assets/img/banner.jpg"/>
         </div>
         <div class="item">
           <div style="z-index: 1;font-size: 30px;color: yellow;position: absolute;" class="text-center col-xs-12 margin-top-100 animate two">
@@ -31,7 +31,6 @@
         <span class="glyphicon glyphicon-chevron-right"></span>
       </a>
     </div>
-
     <!-- 服务项目 -->
     <div class="geu-home-leone-div">
       <div class="col-xs-12 text-center">
@@ -231,6 +230,34 @@
 
   export default {
     name: "Company",
+
+    data() {
+      return {
+        list: ['2'],
+        listObj: {
+          data:[
+            {
+              czname1:'',
+              czname1:'',
+            }
+          ]
+        },
+        czname1:'',
+        czname2:'',
+        czname3:'',
+        czname4:'',
+      };
+    },
+    methods: {
+      addListObjItem() {
+        this.listObj.push({value: ''})
+      },
+      delList(index) {
+        alert(index)
+        this.listObj.splice(index, 1);
+      },
+    }
+
 
   }
 </script>
