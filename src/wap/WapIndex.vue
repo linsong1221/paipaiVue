@@ -1,6 +1,6 @@
 <template>
     <div>
-      <MeuHeader></MeuHeader>
+<!--      <MeuHeader></MeuHeader>-->
       <Navigation></Navigation>
       <router-view></router-view>
       <MeuFooter></MeuFooter>

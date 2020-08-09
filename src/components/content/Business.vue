@@ -10,7 +10,7 @@
           <hr class="geu-home-leone-service-hr"/>
         </div>
         <div class="col-xs-4 text-center">
-          <span class="geu-business-leone-service-btitle">外贸业务 / </span>
+          <span class="geu-business-leone-service-btitle"  v-text="$t('m.homeContent28')">外贸业务 / </span>
           <span class="geu-business-leone-service-stitle">Business</span>
         </div>
         <div class="col-xs-3">
@@ -19,14 +19,14 @@
         <div class="col-xs-1"></div>
       </div>
       <div class="col-xs-12 margin-top-30 text-center">
-        <div class="col-xs-2"></div>
-        <div class="col-xs-8 geu-business-leone-service-content"> 我司是一家专注用户体验便利，为客户提供完善的商业研究、产品提供、产品</div>
-        <div class="col-xs-2"></div>
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10 geu-business-leone-service-content" v-text="$t('m.homeContent6')"></div>
+        <div class="col-xs-1"></div>
       </div>
       <div class="col-xs-12 margin-top-20 text-center">
-        <div class="col-xs-2"></div>
-        <div class="col-xs-8 geu-home-leone-service-content"> 设计、OEM定制， 以及使用快捷运输方案提供优质服务的公司。</div>
-        <div class="col-xs-2"></div>
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10 geu-home-leone-service-content"  v-text="$t('m.homeContent7')"></div>
+        <div class="col-xs-1"></div>
       </div>
     </div>
 
@@ -53,16 +53,16 @@
               <img class="geu-home-philosophy-img" src="../../assets/img/home-con-icon1.png"/>
             </div>
             <div class="text-center margin-top-25">
-              <span class="geu-home-philosophy-top-content">快速响应</span>
+              <span class="geu-home-philosophy-top-content"  v-text="$t('m.homeContent9')"></span>
             </div>
             <div class="col-xs-12 margin-top-50">
-              <span class="geu-home-philosophy-center-content">我们提供7x24小时的全天候响应速度，随时随地为您服务，做到行业领衔的响应速度。</span>
+              <span class="geu-home-philosophy-center-content"  v-text="$t('m.homeContent10')"></span>
             </div>
             <div class="col-xs-12 margin-top-60">
-              <span class="geu-home-philosophy-bottom-content">定制设计</span>
+              <span class="geu-home-philosophy-bottom-content" v-text="$t('m.homeContent11')"></span>
             </div>
             <div class="col-xs-12 margin-top-10">
-              <span class="geu-home-philosophy-footer-content">产品确认，海运/空运，通关配送。</span>
+              <span class="geu-home-philosophy-footer-content" v-text="$t('m.homeContent12')"></span>
             </div>
           </div>
           <div class="geu-home-letwo-philosophy-parttwo">
@@ -70,16 +70,16 @@
               <img class="geu-home-philosophy-img" src="../../assets/img/home-con-icon3.png"/>
             </div>
             <div class="text-center margin-top-25">
-              <span class="geu-home-philosophy-top-content">诚信至上</span>
+              <span class="geu-home-philosophy-top-content" v-text="$t('m.homeContent13')"></span>
             </div>
             <div class="col-xs-12 margin-top-50">
-              <span class="geu-home-philosophy-center-content">公司秉承“以人为本、追求超越”的经营理念;恪守“诚信为本、客户至尊”为服务宗旨。</span>
+              <span class="geu-home-philosophy-center-content" v-text="$t('m.homeContent14')"></span>
             </div>
             <div class="col-xs-12 margin-top-60">
               <span class="geu-home-philosophy-bottom-content">OEM</span>
             </div>
             <div class="col-xs-12 margin-top-10">
-              <span class="geu-home-philosophy-footer-content">专业设计，提供优质产品。</span>
+              <span class="geu-home-philosophy-footer-content"  v-text="$t('m.homeContent16')" ></span>
             </div>
           </div>
           <div class="geu-home-letwo-philosophy-partthree">
@@ -87,16 +87,16 @@
               <img class="geu-home-philosophy-img" src="../../assets/img/home-con-icon2.png"/>
             </div>
             <div class="text-center margin-top-25">
-              <span class="geu-home-philosophy-top-content">坚持不断创新</span>
+              <span class="geu-home-philosophy-top-content"  v-text="$t('m.homeContent17')"></span>
             </div>
             <div class="col-xs-12 margin-top-50">
-              <span class="geu-home-philosophy-center-content">通过坚持不懈地开拓创新、与时俱进，公司不断开创新局面、实现新跨越。</span>
+              <span class="geu-home-philosophy-center-content"  v-text="$t('m.homeContent18')"></span>
             </div>
             <div class="col-xs-12 margin-top-60">
-              <span class="geu-home-philosophy-bottom-content">访问工厂</span>
+              <span class="geu-home-philosophy-bottom-content" v-text="$t('m.homeContent19')"></span>
             </div>
             <div class="col-xs-12 margin-top-10">
-              <span class="geu-home-philosophy-footer-content">提供专业翻译人员，日程及住宿安排。</span>
+              <span class="geu-home-philosophy-footer-content"  v-text="$t('m.homeContent20')"></span>
             </div>
           </div>
         </div>
@@ -108,7 +108,7 @@
     <div style="height: 600px;" class=" geu-common-auto-width">
       <div  class="col-xs-12 margin-top-80">
         <div class="col-xs-offset-4 col-xs-4 text-center">
-          <span class="geu-home-letwo-title">我们提供的服务</span>
+          <span class="geu-home-letwo-title"  v-text="$t('m.business1')"></span>
         </div>
 
         <div class="col-xs-12">
@@ -121,54 +121,54 @@
       <div class="col-xs-12 text-center margin-top-70">
         <div class="col-xs-offset-1 col-xs-3">
           <img width="46px" height="46px" src="../../assets/img/company_p1.png"/>
-          <span style="margin-left: 10px; color: #000000; font-family: Microsoft YaHei; font-size: 24px;">产品,市场调查</span>
+          <span style="margin-left: 10px; color: #000000; font-family: Microsoft YaHei; font-size: 24px;"   v-text="$t('m.business2')"></span>
         </div>
         <div  class="col-xs-4">
           <img width="46px" height="46px" src="../../assets/img/company_p2.png"/>
-          <span style="margin-left: 10px; color: #000000; font-family: Microsoft YaHei; font-size: 24px;">资料查询</span>
+          <span style="margin-left: 10px; color: #000000; font-family: Microsoft YaHei; font-size: 24px;"   v-text="$t('m.business3')"></span>
         </div>
         <div class="col-xs-3">
           <img width="46px" height="46px" src="../../assets/img/company_p3.png"/>
-          <span style="margin-left: 10px; color: #000000; font-family: Microsoft YaHei; font-size: 24px;">发送订单</span>
+          <span style="margin-left: 10px; color: #000000; font-family: Microsoft YaHei; font-size: 24px;"   v-text="$t('m.business4')"></span>
         </div>
         <div class="col-xs-1"></div>
       </div>
       <div class="col-xs-12 text-center margin-top-20" style="font-size: 12px;">
-        <div style="float: left;margin-left: 216px;">邮件咨询，联系负责人电话咨询均可。</div>
+        <div style="float: left;margin-left: 216px;" v-text="$t('m.business5')"></div>
 
-        <div style="float: left;margin-left: 150px; width: 200px;">工作日均可查询，周末如有加急情况</div>
-        <div style="float: left;margin-left: 145px;">核对产品信息，确认交期。拟合合同。</div>
+        <div style="float: left;margin-left: 150px; width: 200px;" v-text="$t('m.business6')"></div>
+        <div style="float: left;margin-left: 145px;" v-text="$t('m.business7')"></div>
       </div>
-      <div class="col-xs-12 text-center" style="font-size: 12px;">
-        <div style="margin-left: 72px;">请联系负责人。</div>
-      </div>
+<!--      <div class="col-xs-12 text-center" style="font-size: 12px;">-->
+<!--        <div style="margin-left: 72px;" v-text="$t('m.business6m')"></div>-->
+<!--      </div>-->
       <!--        <div style="color: #666666; font-size: 12px" class="col-xs-11 text-center margin-top-15">-->
       <!--        </div>-->
       <div class="col-xs-12 text-center margin-top-70">
         <div class="col-xs-offset-1 col-xs-3">
           <div style="margin-left: -43px;">
             <img width="46px" height="46px" src="../../assets/img/company_p4.png"/>
-            <span style="margin-left: 10px; color: #000000; font-family: Microsoft YaHei; font-size: 18px;">交易方式</span>
+            <span style="margin-left: 10px; color: #000000; font-family: Microsoft YaHei; font-size: 18px;"  v-text="$t('m.business8')"></span>
           </div>
         </div>
         <div  class="col-xs-4">
           <img width="46px" height="46px" src="../../assets/img/company_p5.png"/>
-          <span style="margin-left: 10px; color: #000000; font-family: Microsoft YaHei; font-size: 18px;">配送地址</span>
+          <span style="margin-left: 10px; color: #000000; font-family: Microsoft YaHei; font-size: 18px;"  v-text="$t('m.business9')"></span>
         </div>
         <div class="col-xs-3">
           <img width="46px" height="46px" src="../../assets/img/company_p6.png"/>
-          <span style="margin-left: 10px; color: #000000; font-family: Microsoft YaHei; font-size: 18px;">安全可靠</span>
+          <span style="margin-left: 10px; color: #000000; font-family: Microsoft YaHei; font-size: 18px;"  v-text="$t('m.business10')"></span>
         </div>
         <div class="col-xs-1"></div>
       </div>
       <div class="col-xs-12 text-center margin-top-20" style="font-size: 12px;">
-        <div style="float: left;margin-left: 216px;">EXW,FCA,FOB均可进行。需要T/T结算。</div>
+        <div style="float: left;margin-left: 216px;"  v-text="$t('m.business11')"></div>
 
-        <div style="float: left;margin-left: 150px; width: 200px;">确认配送地址，审查产品无误签收</div>
-        <div style="float: left;margin-left: 145px;">进行正式通关，安全可靠。</div>
+        <div style="float: left;margin-left: 150px; width: 200px;"  v-text="$t('m.business12')"></div>
+        <div style="float: left;margin-left: 145px;"  v-text="$t('m.business13')"></div>
       </div>
       <div class="col-xs-12" style="font-size: 12px;">
-        <div style="margin-left: 216px;">如特殊情况请联系负责人。</div>
+        <div style="margin-left: 216px;"  v-text="$t('m.business14')"></div>
       </div>
     </div>
 

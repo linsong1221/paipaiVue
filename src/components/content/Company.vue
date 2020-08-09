@@ -15,7 +15,7 @@
           <hr class="geu-home-leone-service-hr"/>
         </div>
         <div class="col-xs-4 text-center">
-          <span class="geu-company-leone-service-btitle">关于我们 / </span>
+          <span class="geu-company-leone-service-btitle" v-text="$t('m.homeContent28')">关于我们 / </span>
           <span class="geu-company-leone-service-stitle">About Us</span>
         </div>
         <div class="col-xs-4">
@@ -28,10 +28,10 @@
       </div>
 
       <div class="col-xs-12 margin-top-50" style="font-size: 16px;">
-        <div class="col-offset-3 text-center">锦艾国际贸易（大连）有限公司，创立于2018年，公司业务涉及国内一般贸易、货物进出口、技术进出口等多个领域，</div>
-        <div class="col-offset-3 text-center margin-top-10">主要经营各类电子产品,汽车零配件百货，建筑材料，布料，办公与家居用品，服装以及设备。现拥有合作密切的专业产品供应商，提供优质产品，客商分布韩国、</div>
-        <div class="col-offset-3 text-center margin-top-10">日本等国家。目前公司拥有良好的信誉、稳固丰富的货源、稳定的海外客户和广阔的市场网络，</div>
-        <div class="col-offset-3 text-center margin-top-10">在“有诚信、服务好、效率高”的企业宗旨指引下，定能更加快速的成长，同时，也期待与更多国内外朋友合作，共商大业，共创辉煌！</div>
+        <div class="col-offset-3 text-center" v-text="$t('m.company1')"></div>
+        <div class="col-offset-3 text-center margin-top-10"  v-text="$t('m.company2')"></div>
+        <div class="col-offset-3 text-center margin-top-10"  v-text="$t('m.company3')"></div>
+        <div class="col-offset-3 text-center margin-top-10"  v-text="$t('m.company4')"></div>
         <!--          <div class="col-offset-3 text-center margin-top-60">-->
         <!--            <img class="" src="../../assets/img/companylogo.jpg"/>-->
         <!--          </div>-->

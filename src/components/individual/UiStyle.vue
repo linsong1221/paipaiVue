@@ -66,6 +66,35 @@
         <el-button @click="onClickSubmit">提交数据</el-button>
       </div>
 
+      <hr />
+      <el-form ref="form" :model="form">
+        <el-table  ref="table" :data="form.tableData" empty-text='暂无数据'>
+          <el-table-column label="姓名">
+            <template slot-scope="scope">
+              <el-form-item :prop=" 'tableData.' + scope.$index + '.name' "
+                            :rules="{ required: true, message: '名字不能为空', trigger: 'blur' }">
+                <el-input v-model="scope.row.name"></el-input>
+              </el-form-item>
+            </template>
+          </el-table-column>
+          <el-table-column label="年龄">
+            <template slot-scope="scope">
+              <el-form-item >
+                <el-input v-model.number="scope.row.age" type="number"></el-input>
+              </el-form-item>
+            </template>
+          </el-table-column>
+          <el-table-column  label="操作">
+            <template slot-scope="scope">
+              <el-button type="danger" size="mini" @click="del(scope.$index)" icon='el-icon-delete'></el-button>
+              <el-button type="primary" size="mini" @click="add" icon='el-icon-plus'></el-button>
+            </template>
+          </el-table-column>
+        </el-table>
+      </el-form>
+
+      <hr />
+
 
       <table border="0" cellpadding="0" cellspacing="0" class="customTable">
         <thead>
@@ -117,6 +146,18 @@
               // {czname1:'', czname2:'', czname3:'', czname4:''}
             ]
           },
+          form: {
+            tableData: [
+              {
+                name: 'aaa',
+                age: 11
+              },
+              {
+                name: '',
+                age: ''
+              }
+            ]
+          }
         };
       },
       methods: {
@@ -130,6 +171,15 @@
         onClickSubmit() {
           alert(JSON.stringify(this.listObj))
         },
+        add () {
+          this.form.tableData.push({
+            name: '',
+            age: ''
+          })
+        },
+        del (index) {
+          this.form.tableData.splice(index, 1);
+        }
       }
     }
 </script>

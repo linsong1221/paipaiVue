@@ -14,13 +14,22 @@
           <div style="z-index: 1;font-size: 30px;color: yellow;position: absolute;" class="text-center col-xs-12 margin-top-100 animate two">
             <strong><span>G</span><span>E</span><span>U</span><span>M</span> <span>A</span><span>I</span> <span>I</span><span>N</span><span>T</span><span>E</span><span>R</span><span>N</span><span>A</span><span>T</span><span>I</span><span>O</span><span>N</span><span>A</span><span>L</span></strong>
           </div>
-          <img  src="../../assets/img/banner.jpg"/>
+<!--          <img  src="../../assets/img/banner.jpg"/>-->
+          <img  src="../../assets/img/bk002.jpg"/>
         </div>
+<!--        <div class="item">-->
+<!--          <div style="z-index: 1;font-size: 30px;color: yellow;position: absolute;" class="text-center col-xs-12 margin-top-100 animate two">-->
+<!--            <strong><span>G</span><span>E</span><span>U</span><span>M</span> <span>A</span><span>I</span> <span>I</span><span>N</span><span>T</span><span>E</span><span>R</span><span>N</span><span>A</span><span>T</span><span>I</span><span>O</span><span>N</span><span>A</span><span>L</span></strong>-->
+<!--          </div>-->
+<!--          &lt;!&ndash;          <img  src="../../assets/img/banner2.jpeg"/>&ndash;&gt;-->
+<!--          <img  src="../../assets/img/bk003.jpg"/>-->
+<!--        </div>-->
         <div class="item">
           <div style="z-index: 1;font-size: 30px;color: yellow;position: absolute;" class="text-center col-xs-12 margin-top-100 animate two">
             <strong><span>G</span><span>E</span><span>U</span><span>M</span> <span>A</span><span>I</span> <span>I</span><span>N</span><span>T</span><span>E</span><span>R</span><span>N</span><span>A</span><span>T</span><span>I</span><span>O</span><span>N</span><span>A</span><span>L</span></strong>
           </div>
-          <img  src="../../assets/img/banner2.jpeg"/>
+<!--          <img  src="../../assets/img/banner2.jpeg"/>-->
+          <img  src="../../assets/img/bk001.jpg"/>
         </div>
       </div>
       <!-- Controls -->
@@ -214,11 +223,11 @@
     <div class="geu-home-aboutus-back">
       <div class="geu-home-aboutus-div">
         <div class="col-xs-12 text-center margin-top-30">
-          <span class="geu-home-aboutus-ch-title">关于我们 </span>
+          <span class="geu-home-aboutus-ch-title" v-text="$t('m.homeContent28')"></span>
           <span class="geu-home-aboutus-en-title"> / about us</span>
         </div>
         <div class="col-xs-offset-1 col-xs-10 geu-home-aboutus-content-div margin-top-25" >
-          <span class="geu-home-aboutus-content">锦艾国际贸易（大连）有限公司，创立于2018年，公司业务涉及国内一般贸易、货物进出口、技术进出口等多个领域，主要经营各类电子产品,汽车零配件，百货，建筑材料，布料，办公与家居用品，服装以及设备。现拥有合作密切的专业产品供应商，提供优质产品，客商分布韩国、日本等国家。目前公司拥有良好的信誉、稳固丰富的货源、稳定的海外客户和广阔的市场网络，在“有诚信、服务好、效率高”的企业宗旨指引下，定能更加快速的成长，同时，也期待与更多国内外朋友合作，共商大业，共创辉煌</span>
+          <span class="geu-home-aboutus-content" v-text="$t('m.homeContent29')"></span>
         </div>
       </div>
     </div>

@@ -46,3 +46,17 @@ Vue.use(Panel);
 
 import { Overlay } from 'vant';
 Vue.use(Overlay);
+
+import { Collapse, CollapseItem } from 'vant';
+
+Vue.use(Collapse);
+Vue.use(CollapseItem);
+
+import { List } from 'vant';
+
+Vue.use(List);
+import { Cell, CellGroup } from 'vant';
+
+Vue.use(Cell);
+Vue.use(CellGroup);
+

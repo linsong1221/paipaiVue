@@ -2,11 +2,14 @@
     <div style="height: 2500px;">
       <van-row>
         <van-swipe style="" :autoplay="3000" indicator-color="white">
+<!--          <van-swipe-item>-->
+<!--            <img style="width: 100%; height: 200px;" src="../../assets/img/bk002.jpg"/>-->
+<!--          </van-swipe-item>-->
           <van-swipe-item>
-            <img style="width: 100%; height: 100%;"  src="../../assets/img/banner1.jpeg"/>
+            <img style="width: 100%; height: 200px;"  src="../../assets/img/bk003.jpg"/>
           </van-swipe-item>
           <van-swipe-item>
-            <img style="width: 100%; height: 100%;" src="../../assets/img/banner2.jpeg"/>
+            <img style="width: 100%; height: 200px;" src="../../assets/img/bk001.jpg"/>
           </van-swipe-item>
         </van-swipe>
       </van-row>

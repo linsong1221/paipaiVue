@@ -22,27 +22,27 @@
         <div class="col-xs-12">
         <div style="color: #797979;" class="col-xs-6 margin-top-40">
           <el-form style="margin-right:30px;" :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
-            <el-form-item label="姓名" prop="name">
-              <el-input v-model="ruleForm.name"></el-input>
+            <el-form-item :label="$t('m.contactus1')" prop="name">
+              <el-input ref="barCodeFocus" type="number" v-model="ruleForm.name"></el-input>
             </el-form-item>
             <el-form-item label="邮箱" prop="mail">
-              <el-input type="mail" v-model="ruleForm.mail"></el-input>
+              <el-input v-model="ruleForm.mail"></el-input>
+<!--              <input ref="scanTextbox" @keyup="scannerByUsb" @focus="stopKeyborad" v-model="ruleForm.mail"></input>-->
             </el-form-item>
-            <el-form-item label="电话号码" prop="phone">
+            <el-form-item :label="$t('m.contactus3')" prop="phone">
               <el-input v-model="ruleForm.phone"></el-input>
             </el-form-item>
-            <el-form-item label="相关事宜" prop="text">
+            <el-form-item :label="$t('m.contactus4')" prop="text">
               <el-input :rows="6" type="textarea" v-model="ruleForm.text"></el-input>
             </el-form-item>
             <el-form-item>
-              <el-button type="primary" @click="submitForm('ruleForm')">立即创建</el-button>
-              <el-button @click="resetForm('ruleForm')">重置</el-button>
+              <el-button type="primary" @click="submitForm('ruleForm')" v-text="$t('m.contactus5')"></el-button>
+              <el-button @click="resetForm('ruleForm')" v-text="$t('m.contactus6')"></el-button>
             </el-form-item>
           </el-form>
         </div>
         <div style="color: #797979; font-size: 17px;" class="col-xs-6 margin-top-40">
-          <div style="font-weight: bold;">
-            大连营业部
+          <div  v-text="$t('m.contactus7')" style="font-weight: bold;">
           </div>
 <!--          <div class="margin-top-15">-->
 <!--            公司电话:  +86-0411-6666-0683-->
@@ -53,8 +53,7 @@
           <div style="font-size: 18px;"  class=" margin-top-30">
 
           </div>
-          <div style="font-weight: bold;">
-            韩国营业部
+          <div  v-text="$t('m.contactus8')" style="font-weight: bold;">
           </div>
           <div  class="margin-top-15">
             手机号码: +82-010-6557-1569
@@ -145,6 +144,14 @@
         map.addOverlay(markergg); //添加谷歌marker
         var labelgg = new BMap.Label("锦艾国际贸易（大连）有限公司",{offset:new BMap.Size(20,-10)});
         markergg.setLabel(labelgg); //添加谷歌label
+
+
+        this.$nextTick(() => {
+          this.$refs.barCodeFocus.focus()
+        })
+        // $("#box").focus(function(){
+        //   document.activeElement.blur();
+        // })
       }
     }
 </script>

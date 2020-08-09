@@ -5,9 +5,9 @@
         <div style="height: 46px;border-bottom: 1px solid #dddddd;">
           <div class="geu-common-auto-width">
               <div style="line-height: 46px;">
-                <div @click="onReturnHome()"  class="geu-cursor" style="width: 63px; color: #4CAF50; font-size: 16px;">
+                <div @click="onReturnHome()"  class="geu-cursor" style="width: 100px; color: #4CAF50; font-size: 16px;">
                   <span class="glyphicon glyphicon-home"></span>
-                  <span style="color: #787878; margin-left: 10px;">首页</span>
+                  <span style="color: #787878; margin-left: 10px;" v-text="$t('m.home')"></span>
                 </div>
               </div>
           </div>
@@ -35,7 +35,7 @@
                   <span>{{item.time}}</span>
                 </div>
                 <div @click="onClickNews(item.num)" style="width: 67px;height: 25px;line-height: 25px;" class="margin-top-25 geu-cursor ">
-                  <span style="float: right;"  class="geu-news-more">更多 <i class="el-icon-arrow-right"></i></span>
+                  <span style="float: right;"  class="geu-news-more" v-text="$t('m.newMore')"> <i class="el-icon-arrow-right"></i></span>
                 </div>
               </div>
             </div>

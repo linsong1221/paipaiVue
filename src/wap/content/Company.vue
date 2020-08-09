@@ -3,7 +3,7 @@
 
     <div style="height: 1150px;">
       <van-row>
-        <img style="width: 100%; height: 180px;" src="../../assets/img/companyback.jpg"/>
+        <img style="width: 100%; height: 180px;" src="../../assets/img/bk002.jpg"/>
       </van-row>
 
       <van-row  class="margin-top-15">
@@ -13,7 +13,7 @@
         <van-col offset="2" span="20"><span style="font-size: 18px; color: #969799;"> 做外贸服务，我们是认真的！</span></van-col>
       </van-row>
       <van-row>
-        <van-col style="font-size: 12px; line-height: 21px;" class="margin-top-15"  offset="1" span="22">
+        <van-col style="font-size: 13px;color: #666666; line-height: 21px;" class="margin-top-15"  offset="1" span="22">
           锦艾国际贸易（大连）有限公司，创立于2018年，公司业务涉及国内一般贸易、货物进出口、技术进出口等多个领域，
           主要经营各类电子产品,汽车零配件百货，建筑材料，布料，办公与家居用品，服装以及设备。现拥有合作密切的专业产品供应商，提供优质产品，客商分布韩国、
           日本等国家。目前公司拥有良好的信誉、稳固丰富的货源、稳定的海外客户和广阔的市场网络，

@@ -8,6 +8,9 @@ import UiStyle from './components/individual/UiStyle.vue'
 
 import wapHome from './wap/content/Contents.vue'
 import wapCompany from './wap/content/Company.vue'
+import wapBusiness from './wap/content/Business.vue'
+import wapNews from './wap/news/News.vue'
+import wapContactUs from './wap/content/ContactUs.vue'
 import NewsDetail from "./components/news/NewsDetail";
 
 function IsPC(){
@@ -24,131 +27,200 @@ sessionStorage.setItem('flag',routerFlag);
 
 var flagRouter = JSON.parse(sessionStorage.getItem('flag'));
 
-let aaa = []
-aaa = [
-  {
-    path:'/',
-    name:'/',
-    component: Home
-  },
-  {
-    path:'/index',
-    name:'/index',
-    component: Home
-  },
-  {
-    path:'/news',
-    name:'/news',
-    component:News
-  },
-  {
-    path:'/test',
-    component:Test
-  },
-  {
-    path:'/company',
-    name:'company',
-    component:Company
-  },
-  {
-    path:'/business',
-    name:'business',
-    component:Business
-  },
-  {
-    path:'/contactus',
-    name:'contactus',
-    component:ContactUs
-  },
-  {
-    path:'/uistyle',
-    name:'uistyle',
-    component:UiStyle
-  },
-  {
-    path:'/uistyle',
-    name:'uistyle',
-    component:UiStyle
-  },
-  {
-    path:'/newsdetail',
-    name:'newsdetail',
-    component:NewsDetail
-  },
-]
-
 // let aaa = []
-// if (flagRouter) {
-//   aaa = [
-//     {
-//       path:'/',
-//       name:'/',
-//       component: Home
-//     },
-//     {
-//       path:'/index',
-//       name:'/index',
-//       component: Home
-//     },
-//     {
-//       path:'/news',
-//       name:'/news',
-//       component:News
-//     },
-//     {
-//       path:'/test',
-//       component:Test
-//     },
-//     {
-//       path:'/company',
-//       name:'company',
-//       component:Company
-//     },
-//     {
-//       path:'/business',
-//       name:'business',
-//       component:Business
-//     },
-//     {
-//       path:'/contactus',
-//       name:'contactus',
-//       component:ContactUs
-//     },
-//     {
-//       path:'/uistyle',
-//       name:'uistyle',
-//       component:UiStyle
-//     },
-//     {
-//       path:'/uistyle',
-//       name:'uistyle',
-//       component:UiStyle
-//     },
-//     {
-//       path:'/newsdetail',
-//       name:'newsdetail',
-//       component:NewsDetail
-//     },
-//   ]
-// } else {
-//   aaa = [
-//     {
-//       path:'/',
-//       name:'/',
-//       component: wapHome
-//     },
-//     {
-//       path:'/wap/index',
-//       name:'wapHome',
-//       component: wapHome
-//     },
-//     {
-//       path:'/wap/company',
-//       name:'wapCompany',
-//       component:wapCompany
-//     }
-//   ]
-// }
+// aaa = [
+//   {
+//     path:'/',
+//     name:'/',
+//     component: Home
+//   },
+//   {
+//     path:'/index',
+//     name:'/index',
+//     component: Home
+//   },
+//   {
+//     path:'/news',
+//     name:'/news',
+//     component:News
+//   },
+//   {
+//     path:'/test',
+//     component:Test
+//   },
+//   {
+//     path:'/company',
+//     name:'company',
+//     component:Company
+//   },
+//   {
+//     path:'/business',
+//     name:'business',
+//     component:Business
+//   },
+//   {
+//     path:'/contactus',
+//     name:'contactus',
+//     component:ContactUs
+//   },
+//   {
+//     path:'/uistyle',
+//     name:'uistyle',
+//     component:UiStyle
+//   },
+//   {
+//     path:'/uistyle',
+//     name:'uistyle',
+//     component:UiStyle
+//   },
+//   {
+//     path:'/newsdetail',
+//     name:'newsdetail',
+//     component:NewsDetail
+//   },
+// ]
+
+let aaa = []
+
+// aaa = [
+//   {
+//     path:'/',
+//     name:'/',
+//     component: Home
+//   },
+//   {
+//     path:'/index',
+//     name:'/index',
+//     component: Home
+//   },
+//   {
+//     path:'/news',
+//     name:'/news',
+//     component:News
+//   },
+//   {
+//     path:'/test',
+//     component:Test
+//   },
+//   {
+//     path:'/company',
+//     name:'company',
+//     component:Company
+//   },
+//   {
+//     path:'/business',
+//     name:'business',
+//     component:Business
+//   },
+//   {
+//     path:'/contactus',
+//     name:'contactus',
+//     component:ContactUs
+//   },
+//   {
+//     path:'/uistyle',
+//     name:'uistyle',
+//     component:UiStyle
+//   },
+//   {
+//     path:'/uistyle',
+//     name:'uistyle',
+//     component:UiStyle
+//   },
+//   {
+//     path:'/newsdetail',
+//     name:'newsdetail',
+//     component:NewsDetail
+//   },
+// ]
+if (flagRouter) {
+  aaa = [
+    {
+      path:'/',
+      name:'/',
+      component: Home
+    },
+    {
+      path:'/index',
+      name:'/index',
+      component: Home
+    },
+    {
+      path:'/news',
+      name:'/news',
+      component:News
+    },
+    {
+      path:'/test',
+      component:Test
+    },
+    {
+      path:'/company',
+      name:'company',
+      component:Company
+    },
+    {
+      path:'/business',
+      name:'business',
+      component:Business
+    },
+    {
+      path:'/contactus',
+      name:'contactus',
+      component:ContactUs
+    },
+    {
+      path:'/uistyle',
+      name:'uistyle',
+      component:UiStyle
+    },
+    {
+      path:'/uistyle',
+      name:'uistyle',
+      component:UiStyle
+    },
+    {
+      path:'/newsdetail',
+      name:'newsdetail',
+      component:NewsDetail
+    },
+  ]
+} else {
+  aaa = [
+    {
+      path:'/',
+      name:'/',
+      component: wapHome
+    },
+    {
+      path:'/wap/index',
+      name:'wapHome',
+      component: wapHome
+    },
+    {
+      path:'/wap/company',
+      name:'wapCompany',
+      component:wapCompany
+    },
+    {
+      path:'/wap/business',
+      name:'wapBusiness',
+      component:wapBusiness
+    },
+    {
+      path:'/wap/news',
+      name:'wapNews',
+      component:wapNews
+    },
+    {
+      path:'/wap/wapContactUs',
+      name:'wapContactUs',
+      component:wapContactUs
+    }
+  ]
+}
+
+
 
 export default aaa;
 
