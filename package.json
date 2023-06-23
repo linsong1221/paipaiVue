@@ -48,7 +48,7 @@
     "rimraf": "^2.6.0",
     "sass-loader": "^7.1.0",
     "sass-resources-loader": "^2.0.0",
-    "semver": "^5.3.0",
+    "semver": "^7.5.2",
     "shelljs": "^0.7.6",
     "url-loader": "^0.5.8",
     "vant": "^2.1.2",
